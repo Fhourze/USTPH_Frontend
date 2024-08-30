@@ -1,0 +1,65 @@
+/* Welcome Back, Tiger Section */
+.welcome-section {
+    background-image: ('images/blackwhite.png');
+    padding: 20px 0;
+    margin-top: 20px;
+    border-radius: 20px;
+
+}
+
+.welcome-section h2 {
+    font-size: 2.5rem;
+    font-weight: -1;
+    color: #000;
+}
+
+/* Login Form Section */
+.login-form.text-center {
+    text-align: center; 
+}
+
+/* Specific styles for the email label to override centering */
+.login-form .text-label {
+    text-align: left; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+.login-section {
+    margin: 40px 0;
+
+}
+
+.login-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    width: 400px;
+    outline: 1px solid;
+    outline-color: #fcb900;
+}
+
+.login-form .form-control {
+    width: 100%; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #ccc;
+}
+
+.login-form .btn-login {
+    background-color: #f7c42d;
+    border: none;
+    width: 34%;
+    padding: 6px;
+    font-size: .5;
+    font-weight: bold;
+    color: #000000;
+    border-radius: 25px;
+
+}
+
+.login-form .btn-login:hover {
+    background-color: #e6b023;
+}

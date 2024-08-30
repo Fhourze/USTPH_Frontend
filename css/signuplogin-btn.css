@@ -1,0 +1,33 @@
+/* Button Sign Up and Login */
+.navbar-nav .nav-btn {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-left: 5px;
+    border-radius: 20px;
+    background-color: #d9d9d9; /* Default gray background */
+    color: #000000;
+    text-decoration: none; /* Remove underline */
+}
+
+/* Specific styles for Sign Up button */
+.navbar-nav .nav-btn.signup {
+    background-color: #fcb900; /* Yellow for Sign Up button */
+}
+
+/* Specific styles for Login button */
+.navbar-nav .nav-btn.login {
+    background-color: #d9d9d9; /* Gray for Login button */
+}
+
+/* Hover Effect */
+.navbar-nav .nav-btn:hover {
+    background-color: #fcb900; /* Yellow on hover */
+    color: #000000;
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Active Effect */
+.navbar-nav .nav-btn.active {
+    background-color: #fcb900; /* Yellow when active */
+    color: #000000;
+}

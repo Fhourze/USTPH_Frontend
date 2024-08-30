@@ -53,34 +53,7 @@ body {
   
 }
 
-/* Button Sign Up and Login */
-.navbar-nav .nav-btn {
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    margin-left: 5px;
-    border-radius: 20px;
-    background-color: #fcb900; 
-    color: #000000;
-    text-decoration: none; /* Remove underline */
-}
 
-.navbar-nav .nav-btn.login {
-    background-color: #d9d9d9; 
-    color: #000000; 
-}
-
-/* Hover Effect */
-.navbar-nav .nav-btn:hover {
-    background-color: #b38b00; /* Dark Yellow for Sign Up */
-    color: #000000;
-    text-decoration: none; /* Ensure no underline on hover */
-}
-
-.navbar-nav .nav-btn.login:hover {
-    background-color: #a6a6a6; /* Dark Gray for Login */
-    color: #000000;
-    text-decoration: none; /* Ensure no underline on hover */
-}
 
 /* the navbar yung itim */
 .sub-navbar-custom {
