@@ -1,4 +1,4 @@
-/* Ensure the entire body and HTML take up the full height */
+/* Base styles */
 html, body {
     height: 100%;
     margin: 0;
@@ -7,21 +7,20 @@ html, body {
 }
 
 body {
-    font-family: 'Sorts Mill Goudy', serif; /* Apply the font to the entire body */
+    font-family: 'Sorts Mill Goudy', serif; 
 }
 
-/* Container for content and footer */
 .container-fluid {
     flex: 1; /* This makes the container take up the remaining space */
 }
 
-/* Top gold border */
+/* yellow sa taas */
 .top-border {
     height: 5px;
     background: linear-gradient(to bottom, #FFDE59, #FCB900);
 }
 
-/* Main Navbar customization */
+/* the white sa taas */
 .navbar-custom {
     background-color: #ffffff;
     padding: 0.5rem 1rem;
@@ -29,46 +28,61 @@ body {
     justify-content: space-between; 
     align-items: center; 
 }
-/* Text beside logo */
+
+/* USTPH LOGO */
 .navbar-brand {
     display: flex; 
     align-items: center; 
 }
 
-/* Logo */
 .navbar-logo {
     max-height: 60px; 
-    margin-right: 10px; 
+    margin-right: 100px; 
 }
 
+/* text title */
 .navbar-brand .navbar-text {
     display: inline-block;
     color: #000000; 
     font-size: 16px;
     line-height: 1.2;
-    margin-left: 10px;
-}
-/* Signup and Login buttons */
-.navbar-nav {
-    display: flex; 
-    align-items: center; 
 }
 
+.navbar-nav {
+    display: flex; 
+  
+}
+
+/* Button Sign Up and Login */
 .navbar-nav .nav-btn {
     font-weight: bold;
     padding: 0.5rem 1rem;
     margin-left: 5px;
     border-radius: 20px;
-    background-color: #FFD700; 
-    color: #000000; 
+    background-color: #fcb900; 
+    color: #000000;
+    text-decoration: none; /* Remove underline */
 }
 
 .navbar-nav .nav-btn.login {
-    background-color: #878787; 
+    background-color: #d9d9d9; 
     color: #000000; 
 }
 
-/* Sub Navbar customization */
+/* Hover Effect */
+.navbar-nav .nav-btn:hover {
+    background-color: #b38b00; /* Dark Yellow for Sign Up */
+    color: #000000;
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+.navbar-nav .nav-btn.login:hover {
+    background-color: #a6a6a6; /* Dark Gray for Login */
+    color: #000000;
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* the navbar yung itim */
 .sub-navbar-custom {
     background-color: #000000; 
     padding: 0.5rem 1rem;
@@ -79,9 +93,8 @@ body {
     justify-content: space-between; 
 }
 
-/* Navigation links in sub-navbar */
 .sub-navbar-custom .nav-link {
-    color: #ffdd00; /* White text color for all links */
+    color: #ffdd00; 
     font-weight: bold;
     padding: 0.5rem 1rem;
     margin-right: 5px;
@@ -96,3 +109,76 @@ body {
     color: #FFD700; 
 }
 
+/* Responsive Styles */
+
+/* For devices with a minimum width of 475px */
+@media (min-width: 475px) {
+    .navbar-logo {
+        max-height: 50px;
+    }
+
+    .navbar-brand .navbar-text {
+        font-size: 14px;
+        margin-left: 8px;
+    }
+}
+
+/* For devices with a minimum width of 640px */
+@media (min-width: 640px) {
+    .navbar-logo {
+        max-height: 55px;
+    }
+
+    .navbar-brand .navbar-text {
+        font-size: 15px;
+        margin-left: 9px;
+    }
+}
+
+/* For devices with a minimum width of 768px */
+@media (min-width: 768px) {
+    .navbar-logo {
+        max-height: 60px;
+    }
+
+    .navbar-brand .navbar-text {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+}
+
+/* For devices with a minimum width of 1024px */
+@media (min-width: 1024px) {
+    .navbar-logo {
+        max-height: 65px;
+    }
+
+    .navbar-brand .navbar-text {
+        font-size: 18px;
+        margin-left: 12px;
+    }
+}
+
+/* For devices with a minimum width of 1280px */
+@media (min-width: 1280px) {
+    .navbar-logo {
+        max-height: 70px;
+    }
+
+    .navbar-brand .navbar-text {
+        font-size: 20px;
+        margin-left: 14px;
+    }
+}
+
+/* For devices with a minimum width of 1536px */
+@media (min-width: 1536px) {
+    .navbar-logo {
+        max-height: 75px;
+    }
+
+    .navbar-brand .navbar-text {
+        font-size: 22px;
+        margin-left: 16px;
+    }
+}
