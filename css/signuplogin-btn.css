@@ -3,7 +3,7 @@
     src: url('resources/fonts/Goudy.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
 @font-face {
     font-family: 'Roboto';
@@ -12,36 +12,104 @@
     font-style: normal;
 }
 
-/* Button Sign Up and Login */
-.navbar-nav .nav-btn {
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navbar Link Styling */
+.navbar-nav .nav-link {
+    color: #000; /* Preferred color */
     font-weight: bold;
-    padding: 0.5rem 1rem;
-    margin-left: 5px;
-    border-radius: 20px;
-    background-color: #d9d9d9; /* Default gray background */
-    color: #000000;
-    text-decoration: none; /* Remove underline */
+    font-family: 'Goudy', serif;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Specific styles for Sign Up button */
-.navbar-nav .nav-btn.signup {
-    background-color: #fcb900; /* Yellow for Sign Up button */
+/* Dropdown Item Styling */
+.navbar-nav .dropdown-item {
+    color: #000000; /* Preferred color */
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    padding: 8px 10px; /* Adjust padding for default */
+    font-size: 14px; /* Default font size */
 }
 
-/* Specific styles for Login button */
-.navbar-nav .nav-btn.login {
-    background-color: #d9d9d9; /* Gray for Login button */
+.navbar-nav .dropdown-item:hover {
+    color: #fcb900; /* Preferred hover color */
+    background-color: #f8f9fa; /* Preferred background color */
 }
 
-/* Hover Effect */
-.navbar-nav .nav-btn:hover {
-    background-color: #fcb900; /* Yellow on hover */
-    color: #000000;
-    text-decoration: none; /* Ensure no underline on hover */
+/* Dropdown Menu Fade Effect */
+.dropdown-menu {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    visibility: hidden;
+    padding: 0; /* Remove padding to reduce space */
 }
 
-/* Active Effect */
-.navbar-nav .nav-btn.active {
-    background-color: #fcb900; /* Yellow when active */
-    color: #000000;
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Responsive Styling */
+@media (max-width: 1024px) {
+    .navbar-nav .nav-link {
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+
+    .navbar-nav .dropdown-item {
+        padding: 6px 8px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        padding: 7px 10px; /* Further reduce padding for medium screens */
+        font-size: 13px; /* Adjust font size */
+    }
+
+    .navbar-nav .dropdown-item {
+        padding: 4px 6px; /* Reduce padding for medium screens */
+        font-size: 12px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 475px) {
+    .navbar-nav .nav-link {
+        padding: 5px 8px; /* Minimal padding for small screens */
+        font-size: 12px; /* Adjust font size for readability on small screens */
+    }
+
+    .navbar-nav .dropdown-item {
+        padding: 2px 4px; /* Minimal padding for small screens */
+        font-size: 11px; /* Adjust font size */
+    }
+
+    .dropdown-menu {
+        font-size: 11px; /* Ensure font size matches */
+    }
+}
+
+/* General Layout */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
 }
