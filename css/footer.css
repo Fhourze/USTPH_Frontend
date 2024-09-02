@@ -1,4 +1,7 @@
 /* Footer */
+*{
+    font-family: 'Goudy';
+}
 .footer {
     background: linear-gradient(to bottom, #FFDE59, #FCB900); /* Match the gradient color */
     padding: 20px 0;
