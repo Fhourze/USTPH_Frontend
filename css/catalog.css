@@ -1,0 +1,109 @@
+
+/* Welcome Section */
+.welcome-section {
+    text-align: left;
+    background-color: #ebecf0;
+    padding: 20px; 
+    border-radius: 15px;
+    width: 90%;
+    margin-left: 60px;
+    margin: 0 auto; /* Center the navbar horizontally */
+    margin-top: 10px;
+    
+}
+
+.welcome-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Category Sidebar */
+.category-sidebar {
+    padding: 20px;
+    background-color: #ebecf0;
+    border-radius: 15px;
+}
+
+.category-sidebar h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.category-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category-sidebar ul li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.category-sidebar ul li:hover {
+    text-decoration: underline;
+}
+
+/* Catalog Header */
+.catalog-header input {
+    max-width: 300px;
+}
+
+.catalog-header select {
+    max-width: 300px;
+}
+
+/* Book Catalog */
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Custom styles for pagination */
+.pagination .page-link {
+    color: black; /* Text color */
+    border: 1px solid #ccc; /* Border color for the links */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #fcb900; /* Highlight color for the active page */
+    color: black; /* Text color for the active page */
+    border-color: #fcb900; /* Border color for the active page */
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: #ebecf0; /* Background color for disabled items */
+    color: #232323; /* Text color for disabled items */
+    border-color: #ebecf0; /* Border color for disabled items */
+}
+
+/* Hover effect */
+.pagination .page-link:hover {
+    background-color: #fcb900; /* Hover background color */
+    color: black; /* Text color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+
+@media (max-width: 768px) {
+    .category-sidebar {
+      width: 100%;
+      padding: 20px; /* Keep the same padding */
+    }
+    .card {
+      flex-direction: column; /* Optional, adjust as needed */
+    }
+  }
+  
+  /* For screens smaller than 480px (e.g., smaller mobile devices) */
+  @media (max-width: 480px) {
+    .welcome-title {
+      font-size: 24px;
+    }
+    .category-sidebar ul li {
+      padding: 3px 0;
+    }
+  }

@@ -40,9 +40,10 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 16px;
     width: 90%;
-    margin-left: 60px;
+    margin: 0 auto; /* Center the navbar horizontally */
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
     font-family: 'Goudy Old Style', serif;
 }
 
@@ -101,6 +102,8 @@ body {
     margin-left: 60px;
     display: flex; 
     border-radius: 15px;
+    align-items: center; /* Align items vertically in the center */
+    margin: 0 auto; /* Center the navbar horizontally */
     justify-content: space-between; 
 }
 
@@ -113,6 +116,23 @@ body {
     transition-duration: 0.6ms;
 }
 
+/* Welcome Section */
+.welcome-section {
+    text-align: left;
+    background-color: #ebecf0;
+    padding: 20px; 
+    border-radius: 15px;
+    width: 90%;
+    margin-left: 60px;
+    margin: 0 auto; /* Center the navbar horizontally */
+    margin-top: 10px;
+    
+}
+
+.welcome-title {
+    font-size: 32px;
+    font-weight: bold;
+}
 
 
 /* Responsive Styles */
