@@ -1,6 +1,6 @@
 /* Footer */
 *{
-    font-family: 'Goudy';
+    font-family: 'Roboto Condensed', sans-serif;
 }
 .footer {
     background: linear-gradient(to bottom, #FFDE59, #FCB900); /* Match the gradient color */

@@ -13,7 +13,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -31,7 +31,7 @@ body {
 /* Dropdown Item Styling */
 .navbar-nav .dropdown-item {
     color: #000000; /* Preferred color */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
     padding: 8px 10px; /* Adjust padding for default */
     font-size: 14px; /* Default font size */
