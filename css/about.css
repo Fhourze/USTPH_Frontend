@@ -1,0 +1,116 @@
+/* ABOUT USTPH */
+.txt-abt-ustph {
+    margin-left:6.5%;
+    margin-right:6.5%;
+}
+
+.txt-abt {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10px;
+    text-align:justify;
+    font-family: 'Goudy Old Style', serif;
+}
+
+/* MISSION/VISION */
+
+.mission-vision-section {
+    text-align: left;
+    background-color: #ebecf0;
+    padding: 6px; 
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.mission-vision-title {
+    font-family: 'Goudy Old Style', serif;
+    font-size: 20px;
+    margin: 0px 0px 0px 20px;
+}
+
+.txt-space {
+    margin-bottom:30px;
+}
+
+/* PUBLICATION TEAM */
+
+.team-section {
+    text-align: left;
+    background-color: #000000;
+    color:white;
+    padding: 6px; 
+    border-radius: 15px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.team-title {
+    font-family: 'Goudy Old Style', serif;
+    font-size: 20px;
+    margin: 0px 0px 0px 20px;
+}
+
+.publication-container {
+    padding-bottom:50px;
+}
+
+/* PHOTOS OF PUBLICATION TEAM */
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px;
+    padding: 0px;
+    margin-top:30px;
+    margin-left:6.5%;
+    margin-right:6.5%;
+  }
+
+  
+  /* Team member styling */
+  .team-member {
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /* Image styling (circular images) */
+  .team-member img {
+    width: 80px; /* Adjust as needed */
+    height: 80px; /* Same as width to make it circular */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures image covers the circle shape */
+    margin-bottom: 10px;
+  }
+  
+  /* Text styling */
+  .team-member h4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    /* margin: 10px 0 5px 0; */
+    font-size: 1em;
+  }
+  
+  .team-member p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 0.8em;
+    color: #FCB900; /* Optional for styling */
+    text-transform: uppercase;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .team-member {
+      width: calc(33.33% - 20px); /* Adjusts to 3 columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .team-member {
+      width: calc(50% - 20px); /* Adjusts to 2 columns on small screens */
+    }
+  }
+  

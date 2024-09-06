@@ -1,3 +1,66 @@
+@font-face {
+  font-family: 'Goudy Old Style';
+  src: url('/fonts/Goudy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Carousel container with specific width and height */
+#carousel-ust {
+  border-radius: 16px;
+  max-height:90%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  }
+  
+.carousel-inner {
+  margin-top:20px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20px; /* Rounded corners for the carousel */
+  object-position: center;
+  overflow: auto;
+  }
+  
+  .carousel-inner img {
+    max-height: 500px; /* Set your desired height for the carousel images */
+    object-fit: cover; /* Makes sure the image covers the entire area while maintaining aspect ratio */
+    width: 100%; /* Ensures the image spans the width of the carousel */
+  }
+  
+  /* Adjust the position of the carousel controls (arrows) */
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top:40px;
+  }
+  
+  /* Optional: Style carousel indicators (dots) */
+  .carousel-indicators li {
+    background-color: rgba(255, 255, 255, 0.7); /* Lighter color for the dots */
+  }
+  
+  .carousel-indicators .active {
+    background-color: rgba(255, 255, 255, 1); /* Fully opaque color for the active dot */
+  }
+  
+/* Texts */
+
+p {
+  font-family: 'Archivo Condensed', sans-serif;
+}
+
+h3 {
+  font-family: 'Goudy Old Style', serif;
+  text-transform: uppercase; 
+}
 
 /* Featured Books */
 .featured-books {
@@ -27,6 +90,18 @@
 
 .featured-books .btn:hover {
     background-color: #e0a800;
+}
+
+#btn-view-cat {
+  font-family: 'Goudy Old Style', serif;
+  background: linear-gradient(to bottom, #FFDE59, #FCB900);
+  border:none;
+}
+
+#btn-view-cat:hover {
+    background: linear-gradient(to bottom, #383838, #121212);
+    transition: 0.5s;
+    color:#FFDE59;
 }
 
 /* Browse by Category */

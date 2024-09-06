@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Goudy';
+    font-family: 'Goudy Old Style';
     src: url('/fonts/Goudy.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -18,10 +18,12 @@ html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    font-family: 'Goudy Old Style', serif;
+
 }
 
 body {
-    font-family: 'Goudy', serif; 
+    font-family: 'Goudy Old Style', serif; 
 }
 
 .container-fluid {
@@ -64,15 +66,17 @@ body {
 
 /* Text styling */
 .navbar-text, .brand-title, .brand-subtitle {
+    font-family: 'Goudy Old Style', serif;
+
     color: black;
     text-decoration: none;
     margin-left: 10px;
-     display: flex;
+    display: flex;
     flex-direction: column;
 }
 
 .brand-title {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 .brand-subtitle {
@@ -84,6 +88,10 @@ body {
     text-decoration: none;
 }
 
+#navbarNav {
+    font-family: 'Goudy Old Style', serif;
+}
+
 .navbar-nav {
     font-family: 'Goudy Old Style', serif;
     display: flex; 
@@ -92,10 +100,12 @@ body {
 /* BLACK NAVBAR */
 
 .nav-item.active .nav-link {
+    font-family: 'Goudy Old Style', serif;
     color: #FFD700 !important; /* Force the active link color to be yellow */
 }
 
 .sub-navbar-custom {
+    font-family: 'Goudy Old Style', serif;
     background-color: #000000; 
     padding: 0.5rem 1rem;
     width: 90%;
@@ -108,6 +118,7 @@ body {
 }
 
 .nav-link {
+    font-family: 'Goudy Old Style', serif;
     padding: 0.5rem 1rem;
     margin-right: 15px;
 }
@@ -120,18 +131,17 @@ body {
 .welcome-section {
     text-align: left;
     background-color: #ebecf0;
-    padding: 20px; 
+    padding: 15px; 
     border-radius: 15px;
     width: 90%;
-    margin-left: 60px;
     margin: 0 auto; /* Center the navbar horizontally */
     margin-top: 10px;
-    
 }
 
 .welcome-title {
+    font-family: 'Goudy Old Style', serif;
     font-size: 32px;
-    font-weight: bold;
+    margin: 0px 0px 0px 10px;
 }
 
 
