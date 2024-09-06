@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.book-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row; /* Ensures columns are side by side */
+  align-items: flex-start; /* Align items to the start of the container */
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.book-cover {
+  flex: 1; /* Takes up 1 part of the available space */
+  min-width: 200px;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.book-cover img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+.book-info {
+  flex: 2; /* Takes up 2 parts of the available space */
+}
+
+.book-genre {
+  color: #FCB900;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.book-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.book-author {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #555;
+  text-transform: uppercase;
+}
+
+.book-price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #FCB900;
+  margin-bottom: 20px;
+}
+
+.book-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.book-details {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.book-view {
+  margin-top:2%;
+  margin-bottom:5%;
+}
+
+/* BACK BUTTON */
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none !important; /* Removes the underline */
+  color: #333; /* Dark yellow color */
+}
+
+.back-button:hover {
+  color: #a4a4a4; /* Keep text color dark yellow on hover */
+  transition: 0.5s;
+}
+
+.back-button i {
+  margin-right: 8px;
+}
+
+/* SHOPEE LAZADA BUTTONS */
+
+.btn-shopee {
+  background: linear-gradient(to bottom, #F53D2D, #FF6633);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none !important;
+  text-align: center;
+  font-size: 16px;
+  color:white;
+  text-transform: uppercase;
+  margin-right:10px;
+}
+
+.btn-shopee:hover {
+  background-color: rgba(255, 255, 255, 0.50);
+  color: #fff;
+  transition: 0.5s;
+
+}
+
+.btn-lazada {
+  background: linear-gradient(to bottom, #0000BE, #0E136F);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none !important;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.btn-lazada:hover {
+  background-color: #003670; /* Darker blue on hover */
+  color: #fff;
+  transition: 0.5s;
+}
