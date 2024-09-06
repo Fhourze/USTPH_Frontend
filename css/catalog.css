@@ -87,6 +87,144 @@
     text-decoration: none; /* Remove underline on hover */
 }
 
+/********************************************* Admin CSS *******************************************************************************/
+/* Combined CSS for Admin and General Buttons */
+
+/* Styling for the "+ ADD BOOK" button */
+.add-book-btn {
+    background-color: #fcb900; /* Yellow background */
+    color: black; /* Text color */
+    border: none;
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 30px; /* Rounded corners */
+    font-weight: lighter;
+    cursor: pointer;
+    display: inline-flex; /* Ensure it aligns inline with other elements */
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.add-book-btn:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    color: black;
+}
+
+/* General Button Styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Add Button */
+.add-btn {
+    background-color: #FFCC33;
+    color: black;
+    margin-right: 10px;
+}
+
+.add-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Edit Button */
+.edit-btn {
+    background-color: #FFCC33;
+    color: black;
+    margin-right: 10px;
+}
+
+.edit-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Delete Button */
+.delete-btn {
+    background-color: #ff6666;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e60000;
+}
+
+/* Category Sidebar Buttons Alignment */
+.category-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Book Buttons Alignment */
+.book-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.add-book-btn:hover {
+    background-color: #e0a800; 
+    color: black;
+}
+
+/* Responsive Add-Book Button and Sidebar */
+
+/* For tablets and larger mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .add-book-btn {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Reduce font size */
+        width: 100%; /* Full-width on smaller screens */
+    }
+
+    .category-sidebar {
+        width: 100%;
+        padding: 15px; /* Adjust padding for mobile */
+        text-align: center; /* Center the text for mobile */
+    }
+
+    .card {
+        flex-direction: column; /* Stack the card items vertically on mobile */
+        width: 100%; /* Full width for the cards */
+    }
+}
+
+/* For smaller mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .add-book-btn {
+        padding: 6px 12px; /* Further adjust padding */
+        font-size: 12px; /* Smaller font for very small screens */
+        width: 100%; /* Ensure full-width button on small screens */
+    }
+
+    .welcome-title {
+        font-size: 24px; /* Smaller font for the welcome title */
+    }
+
+    .category-sidebar ul li {
+        padding: 3px 0; /* Reduce padding between list items */
+    }
+
+    .card {
+        padding: 10px; /* Adjust padding for the card on smaller screens */
+    }
+}
+
+/* Hover effect */
+.add-book-btn:hover {
+    background-color: #e0a800; 
+    color: black;
+}
 
 @media (max-width: 768px) {
     .category-sidebar {

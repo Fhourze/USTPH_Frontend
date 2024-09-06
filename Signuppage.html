@@ -77,36 +77,43 @@
             </nav> 
 
      <!-- Welcome Back, Tiger Section -->
-     <div class="welcome-section">
-        <h1 class="welcome-title">CREATE AN ACCOUNT</h1>
-    </div>
+        <div class="welcome-section">
+            <h1 class="welcome-title">CREATE AN ACCOUNT</h1>
+        </div>
 
-     <!-- Sign Up Form Section -->
+        <!-- Sign Up Form Section -->
         <div class="login-section d-flex justify-content-center">
-            <form class="login-form text-center">
+            <form class="login-form text-center" action="/register" method="POST"> <!-- Backend needed for form submission -->
                 <div class="form-group">
                     <label for="last-name" class="text-label">Last Name</label>
-                    <input type="text" id="last-name" class="form-control" placeholder="Enter your last name">
+                    <input type="text" id="last-name" name="last_name" class="form-control" placeholder="Enter your last name" required>
+                    <!-- Backend will store this in the database (last name field) -->
                 </div>
                 <div class="form-group">
                     <label for="first-name" class="text-label">First Name</label>
-                    <input type="text" id="first-name" class="form-control" placeholder="Enter your first name">
+                    <input type="text" id="first-name" name="first_name" class="form-control" placeholder="Enter your first name" required>
+                    <!-- Backend will store this in the database (first name field) -->
                 </div>
                 <div class="form-group">
                     <label for="email" class="text-label">Email Address</label>
-                    <input type="email" id="email" class="form-control" placeholder="Enter your active email address">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your active email address" required>
+                    <!-- Backend validation for email format, uniqueness, and storage -->
                 </div>
                 <div class="form-group">
                     <label for="contact-number" class="text-label">Contact Number</label>
-                    <input type="tel" id="contact-number" class="form-control" placeholder="Enter your phone number">
+                    <input type="tel" id="contact-number" name="contact_number" class="form-control" placeholder="Enter your phone number" required>
+                    <!-- Backend validation for phone number format and storage -->
                 </div>
                 <div class="form-group">
                     <label for="password" class="text-label">Password</label>
-                    <input type="password" id="password" class="form-control" placeholder="Enter a strong password">
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter a strong password" required>
+                    <!-- Backend to hash and securely store password -->
                 </div>
                 <button type="submit" class="btn btn-login">SIGN UP</button>
+                <!-- Backend needed for form submission, user creation, validation, password hashing, and redirect on success/failure -->
             </form>
         </div>
+
         
      <!-----------FOOTER HERE- ------------>
         <footer class="footer">
