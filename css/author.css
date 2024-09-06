@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Goudy Old Style';
+    src: url('/fonts/Goudy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global Font Application */
+body, h1, h2, h3, h4, h5, h6, p, li, a, button, table {
+    font-family: 'Goudy Old Style', serif;
+}
+
+/* Dashboard Sidebar */
+.sidebar {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.sidebar h4 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sidebar .nav-link {
+    color: black;
+    padding: 10px;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+    background-color: #ffd100;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Dashboard Table */
+.dashboard-content {
+    margin-top: 20px;
+}
+
+.table-header {
+    background-color: #ffd100;
+    color: black;
+    font-weight: bold;
+}
+
+.submitted {
+    background-color: #d9edf7;
+    color: #31708f;
+}
+
+.in-progress {
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+
+.rejected {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+.approved {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+/* Submission Guidelines */
+.submission-guidelines-content {
+    margin-top: 20px;
+}
+
+.submission-guidelines-content h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.submission-guidelines-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.submission-guidelines-content p, li {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.submission-guidelines-content .btn-warning {
+    background-color: #fcb900;
+    font-weight: lighter;
+    color: black;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
