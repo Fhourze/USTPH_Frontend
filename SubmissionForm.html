@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBMISSION FORM</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/submission-form.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/signuplogin-btn.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="css/catalog.css" rel="stylesheet">
+    <link href="css/account.css" rel="stylesheet">
+    <link href="css/author.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <!-- THIN YELLOW BORDER TOP -->
+        <div class="top-border"></div>
+        <!-- LOGO | SIGNUP | LOGIN -->
+        <!DOCTYPE html>
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Responsive Navbar</title>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+                <link href="css/navbar.css" rel="stylesheet">
+            </head>
+            
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <a class="navbar-ustph" href="Homepage.html">
+                    <img src="images/USTPH.png" class="navbar-logo" alt="USTPH Logo">
+                    <div class="navbar-text">
+                        <span class="brand-title">UNIVERSITY OF SANTO TOMAS</span>
+                        <span class="brand-subtitle">PUBLISHING HOUSE</span>
+                    </div>
+                </a>
+
+                <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MY ACCOUNT
+                            </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="UserAccount.html">My ACCOUNT</a>
+                                    <a class="dropdown-item" href="Signuppage.html">SIGN-OUT</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+    
+ <!-------NAVBAR--------------->
+            <nav class="navbar navbar-expand-lg navbar-dark sub-navbar-custom">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Homepage.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="UserCatalog.html">CATALOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">ABOUT USTPH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="SubmissionGuideL.html">SUBMISSION</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>   
+
+ <!------------ WELCOME SECTION ---------->
+            <div class="welcome-section">
+                <h1 class="welcome-title"> AUTHOR SUBMISSION DASHBOARD </h1>
+            </div>
+ <!------------ DashBoard ---------->
+            <div class="container dashboard-container">
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-md-3 sidebar">
+                        <h4>Dashboard</h4>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link" href="SubmissionGuideL.html">Submission Guidelines</a></li>
+                            <li class="nav-item"><a class="nav-link" href="AuthorDash.html">Dashboard</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="SubmissionForm.html">Submission Form</a></li>
+                        </ul>
+                    </div>
+            
+                    <!-- Submission form -->
+                    <div class="col-md-9 dashboard-content">
+                        <h3>SUBMISSION FORM</h3>
+                            <div class="row">
+                                <!-- Left Side of the Form -->
+                                <div class="col-md-6">
+                                    <!-- Email -->
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                    </div>
+
+                                    <!-- Author's Name -->
+                                    <div class="form-group">
+                                        <label for="authorName">Name of Author(s) or Editor(s)</label>
+                                        <input type="text" class="form-control" id="authorName" placeholder="Enter author's name">
+                                    </div>
+
+                                    <!-- Royalty & Copyright Payment Details -->
+                                    <div class="form-group">
+                                        <label for="royaltyDetails">Please provide your full name (for royalty payments and copyright purpposes) if different from your penname</label>
+                                        <input type="text" class="form-control" id="royaltyDetails" placeholder="Enter royalty details">
+                                    </div>
+
+                                    <!-- Current Address -->
+                                    <div class="form-group">
+                                        <label for="address">Current Address</label>
+                                        <input type="text" class="form-control" id="address" placeholder="Enter your address">
+                                    </div>
+
+                                    <!-- Title of Manuscript -->
+                                    <div class="form-group">
+                                        <label for="manuscriptTitle">Title of Manuscript (MS), Including subtitle</label>
+                                        <input type="text" class="form-control" id="manuscriptTitle" placeholder="Enter manuscript title">
+                                    </div>
+
+                                    <!-- Bookstore Category -->
+                                    <div class="form-group">
+                                        <label for="bookCategory">Bookstore Category of the MS</label>
+                                        <select class="form-control" id="bookCategory">
+                                            <option>Choose category</option>
+                                            <option>Fiction</option>
+                                            <option>Non-Fiction</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Checkbox: Anthology -->
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="anthology">
+                                            <label class="form-check-label" for="anthology">Is your MS an Anthology</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Checkbox: Pre-screening -->
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="Pre-screening">
+                                            <label class="form-check-label" for="anthology">Did the contribution under a pre-screening by the editors?</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Upload file -->
+                                    <div class="form-group-R">
+                                        <label>If the MS is an anthology, please provide individually signed documentation 
+                                            or certification that the contributors gave you permission to include their works 
+                                            in the anthology. Please compile these in one PDF file.</label>
+                                        <button class="btn btn-outline-dark btn-block"><i class="fas fa-upload"></i> Click to Upload</button>
+                                    </div>
+
+                                    <!-- Checkbox: Scholarly MS -->
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="Scholarly">
+                                            <label class="form-check-label" for="anthology">If your are submitting a Scholarly MS, is the citation style consistent throughout the manuscript?</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Checkbox: Translation -->
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="Translation">
+                                            <label class="form-check-label" for="anthology">Is your manuscript a translation?</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- name of the author translator -->
+                                    <div class="form-group">
+                                        <label for="authorTranslator">If the answer above is YES, please write the name of the AUTHOR, TRANSLATOR, 
+                                            the TITLE in the original language and YEAR of first publication. If this is a collection of translations 
+                                            from different authors, please write VARIOUS SOURCES.</label>
+                                        <input type="text" class="form-control" id="authorTranslator" placeholder="Enter Name of the Author Translator">
+                                    </div>
+
+                                    <!-- Upload file -->
+                                    <div class="form-group-R">
+                                        <label>If the MS is a translation project, please provide documentation or certification that you are granted
+                                            the permission or license to translate by the copyright owner.</label>
+                                        <button class="btn btn-outline-dark btn-block"><i class="fas fa-upload"></i> Click to Upload</button>
+                                    </div>
+                                    
+                                </div>
+
+                                <!-- Right Side of the Form -->
+                                <div class="col-md-6">
+                                    <!-- File Upload Buttons -->
+                                    <div class="form-group-R">
+                                        <label><br>Kindly upload the full MANUSCRIPT here in MS WORD format.</br>
+                                            <br>(PDF submissions are accepted but strictly for the Graphic Literature category.)</br> 
+                                            The MANUSCRIPT must include a TABLE OF CONTENTS, DEDICATION (optional),</br> 
+                                            <br>ACKNOWLEDGMENTS (including publications where parts of the MS first appeared), AUTHOR'S BIONOTE(S) 
+                                            and the CONTRIBUTORS' BIONOTES (for anthologies)</br></label>
+                                        <button class="btn btn-outline-dark btn-block"><i class="fas fa-upload"></i> Click to Upload</button>
+                                    </div>
+
+                                    <div class="form-group-R">
+                                        <label>Kindly upload the second version of your MS without the names of the author/s, editor/s, and contributor/s, 
+                                            and without the bionote/s and acnkowledgments for our double-blind peer review.</label>
+                                        <button class="btn btn-outline-dark btn-block"><i class="fas fa-upload"></i> Click to Upload</button>
+                                    </div>
+
+                                    <div class="form-group-R">
+                                        <label>Kindly upload a cover letter addressed to Asst. Prof. Benedict Parfan, Director, UST Publishing House.
+                                            Kindly upload your curriculum vitae or resumé.</label>
+                                        <button class="btn btn-outline-dark btn-block"><i class="fas fa-upload"></i> Click to Upload</button>
+                                    </div>
+
+                                    <div class="form-group-R">
+                                        <label>Please upload a description of your MS (100-300 words).</label>
+                                        <button class="btn btn-outline-dark btn-block"><i class="fas fa-upload"></i> Click to Upload</button>
+                                    </div>
+
+                                    <div class="form-group-R">
+                                        <label>Please upload high resolution author's photo/s here (maximum file size of 10MB)</label>
+                                        <button class="btn btn-outline-dark btn-block"><i class="fas fa-upload"></i> Click to Upload</button>
+                                    </div>
+
+                                    <div class="form-group-R">
+                                        <label>Upload high-resolution author photo(s)</label>
+                                        <button class="btn btn-outline-dark btn-block"><i class="fas fa-upload"></i> Click to Upload</button>
+                                    </div>
+
+                                    <!-- Proceed Button -->
+                                    <div class="btn text-center">
+                                        <a href="ProceedForm.html" class="btn btn-warning btn-lg"><i class="fas fa-arrow-right"></i>  PROCEED  </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>    
+                </div> <!-- row -->
+            </div> <!-- conatiner dash board -->
+            
+     <!-----------FOOTER HERE- ------------>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- Column 1: Logo -->
+                    <div class="col-md-3 mb-3 d-flex justify-content-center">
+                        <a href="Homepage.html" class="navbar-brand">
+                            <img src="images/USTLOGO.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+                        </a>
+                    </div>
+                    <!-- Column 2: Address -->
+                    <div class="col-md-3 mb-3">
+                        <p><i class="fas fa-map-marker-alt"></i> G/F Beato Angelico Building (side entrance) <br>
+                            University of Santo Tomas, <br>
+                            España Boulevard, Sampaloc, <br>
+                            Manila 1008, Philippines</p>
+                    </div>
+                    <!-- Column 3: Phone Numbers -->
+                    <div class="col-md-3 mb-3">
+                        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                        <p><i class="fas fa-phone"></i> (098) 765-4321</p>
+                    </div>
+                    <!-- Column 4: Social Media -->
+                    <div class="col-md-3 mb-3">
+                        <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f" style="color:black"></i></a>
+                        <a href="#" class="text-white mr-3"><i class="fab fa-twitter" style="color:black"></i></a>
+                        <a href="mailto:info@example.com" class="text-white"><i class="fas fa-envelope" style="color:black"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2024. University of Santo Tomas. All Rights Reserved. | Powered by Communications Bureau</p>
+        </div>
+
+     <!-- Bootstrap JS and dependencies -->
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+
+         <!-- Bootstrap CSS -->
+         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+         <!-- jQuery and Bootstrap JS -->
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

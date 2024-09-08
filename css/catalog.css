@@ -1,8 +1,20 @@
+@font-face {
+    font-family: 'Goudy Old Style';
+    src: url('/fonts/Goudy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Goudy Old Style', serif;
+}
+
 /* Category Sidebar */
 .category-sidebar {
     padding: 20px;
     background-color: #ebecf0;
     border-radius: 15px;
+    font-family: 'Goudy Old Style', serif;
 }
 
 .category-sidebar h4 {
@@ -85,6 +97,7 @@
     justify-content: center;
     white-space: nowrap;
     text-transform: uppercase;
+    font-family: 'Goudy Old Style', serif;
 }
 
 .add-book-btn:hover {
@@ -104,6 +117,7 @@
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: 'Goudy Old Style', serif;
 }
 
 /* Add Button */
@@ -152,31 +166,32 @@
     margin-top: 10px;
 }
 
-
 .add-book-btn:hover {
     background-color: #e0a800; 
     color: black;
 }
 
 /* Responsive Add-Book Button and Sidebar */
-
 /* For tablets and larger mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
     .add-book-btn {
         padding: 8px 16px; /* Adjust padding for smaller screens */
         font-size: 14px; /* Reduce font size */
         width: 100%; /* Full-width on smaller screens */
+        margin-bottom: 10px;
     }
 
     .category-sidebar {
         width: 100%;
         padding: 15px; /* Adjust padding for mobile */
         text-align: center; /* Center the text for mobile */
+        margin-bottom: 10px;
     }
 
     .card {
         flex-direction: column; /* Stack the card items vertically on mobile */
         width: 100%; /* Full width for the cards */
+        margin-bottom: 10px;
     }
 }
 
@@ -209,20 +224,20 @@
 
 @media (max-width: 768px) {
     .category-sidebar {
-      width: 100%;
-      padding: 20px; /* Keep the same padding */
+        width: 100%;
+        padding: 20px; /* Keep the same padding */
     }
     .card {
-      flex-direction: column; /* Optional, adjust as needed */
+        flex-direction: column; /* Optional, adjust as needed */
     }
-  }
-  
-  /* For screens smaller than 480px (e.g., smaller mobile devices) */
-  @media (max-width: 480px) {
+}
+
+/* For screens smaller than 480px (e.g., smaller mobile devices) */
+@media (max-width: 480px) {
     .welcome-title {
-      font-size: 24px;
+        font-size: 24px;
     }
     .category-sidebar ul li {
-      padding: 3px 0;
+        padding: 3px 0;
     }
-  }
+}

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Author DashBoard</title>
+    <title>SUBMISSION FORM</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-   
+    <link href="css/submission-form.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/footer.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
@@ -17,7 +17,8 @@
     <link href="css/catalog.css" rel="stylesheet">
     <link href="css/account.css" rel="stylesheet">
     <link href="css/author.css" rel="stylesheet">
-    
+
+
 </head>
 <body>
     <div class="container-fluid p-0">
@@ -83,7 +84,7 @@
 
  <!------------ WELCOME SECTION ---------->
             <div class="welcome-section">
-                <h1 class="welcome-title">AUTHOR SUBMISSION DASHBOARD</h1>
+                <h1 class="welcome-title"> AUTHOR SUBMISSION DASHBOARD </h1>
             </div>
  <!------------ DashBoard ---------->
             <div class="container dashboard-container">
@@ -93,66 +94,91 @@
                         <h4>Dashboard</h4>
                         <ul class="nav flex-column">
                             <li class="nav-item"><a class="nav-link" href="SubmissionGuideL.html">Submission Guidelines</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="AuthorDash.html">Dashboard</a></li>
-                            <li class="nav-item"><a class="nav-link" href="SubmissionForm.html">Submission Form</a></li>
+                            <li class="nav-item"><a class="nav-link" href="AuthorDash.html">Dashboard</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="SubmissionForm.html">Submission Form</a></li>
                         </ul>
                     </div>
             
-                    <!-- Dashboard Table -->
-                    <div class="col-md-9 dashboard-content">
-                        <h3>Author Dashboard</h3>
-                        <table class="table table-striped table-bordered">
-                            <thead class="table-header">
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Date Submitted</th>
-                                    <th>Title</th>
-                                    <th>Last Review Update</th>
-                                    <th>Comments</th>
-                                    <th>Review Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>02/03/2024</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>03/04/2024</td>
-                                    <td>--</td>
-                                    <td class="submitted">SUBMITTED</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>02/03/2024</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>03/04/2024</td>
-                                    <td>--</td>
-                                    <td class="in-progress">REVIEW IN PROGRESS</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>02/03/2024</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>03/04/2024</td>
-                                    <td>--</td>
-                                    <td class="rejected">REJECTED</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>02/03/2024</td>
-                                    <td>Lorem ipsum dolor sit amet</td>
-                                    <td>03/04/2024</td>
-                                    <td>--</td>
-                                    <td class="approved">APPROVED</td>
-                                </tr>
-                            </tbody>
-                        </table>
+ <!------------ Insert code here ---------->   
+                <div class="col-md-9 dashboard-content">
+                <h3>SUBMISSION FORM</h3>
+                <form>
+                    <div class="form-group">
+                        <label>Are you willing to help with the book positioning research (i.e., determining the target market and creating a customized description of the material for marketing collateral)?</label><br>
+                        <input type="radio" name="book-positioning" value="yes"> YES
+                        <input type="radio" name="book-positioning" value="no"> NO
                     </div>
-                </div>
+
+                    <div class="form-group">
+                        <label>Are you interested in organizing a launching for your book once released?</label><br>
+                        <input type="radio" name="launch-book" value="yes"> YES
+                        <input type="radio" name="launch-book" value="no"> NO
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are you willing to participate in being part of a conference or book talk panel to promote your book?</label><br>
+                        <input type="radio" name="conference-participation" value="yes"> YES
+                        <input type="radio" name="conference-participation" value="no"> NO
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are you willing to participate in book signing events?</label><br>
+                        <input type="radio" name="signing-events" value="yes"> YES
+                        <input type="radio" name="signing-events" value="no"> NO
+                    </div>
+
+                    <div class="form-group">
+                        <label>Did you receive a grant or publication funding for this project?</label><br>
+                        <input type="radio" name="grant-funding" value="yes"> YES
+                        <input type="radio" name="grant-funding" value="no"> NO
+                    </div>
+
+                    <div class="form-group">
+                        <label>If you are submitting a scholarly MS, is the citation style consistent throughout the manuscript?</label><br>
+                        <input type="radio" name="citation-style" value="yes"> YES
+                        <input type="radio" name="citation-style" value="no"> NO
+                    </div>
+
+                    <div class="form-group">
+                        <label>If you answered YES to the above: Is there an allocation in your budget for the purchase of copies? (USTPH authors get a 30% discount on their own titles.)</label><br>
+                        <input type="radio" name="purchase-allocation" value="yes"> YES
+                        <input type="radio" name="purchase-allocation" value="no"> NO
+                    </div>
+
+                    <div class="form-group">
+                        <label>Will you help us promote the book on your social media account/s?</label><br>
+                        <input type="radio" name="social-promotion" value="yes"> YES
+                        <input type="radio" name="social-promotion" value="no"> NO
+                    </div>
+
+                    <div class="form-group">
+                        <label>If you answered YES to the above: Please provide your username and preferred social media site (e.g., Facebook, Instagram, X (Twitter), TikTok, etc.).</label>
+                        <input type="text" class="form-control" placeholder="Enter username and social media site">
+                    </div>
+
+                    <div class="form-group">
+                        <label>For your own personal distribution, are you willing to purchase copies from us or have copies consigned to you (to be paid after an agreed period of time)? Either option entitles you to a 30% author’s discount.</label><br>
+                        <input type="radio" name="distribution-options" value="purchase"> Purchase directly
+                        <input type="radio" name="distribution-options" value="consignment"> Consignment
+                        <input type="radio" name="distribution-options" value="either"> Either/Both
+                        <input type="radio" name="distribution-options" value="none"> None of the above
+                    </div>
+
+                    <div class="form-group">
+                        <label>Do you have other ideas or plans on how to help sell your book or further reach your target readers? If so, please list them below.</label>
+                        <input type="text" class="form-control" placeholder="Enter your ideas here">
+                    </div>
+
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn-submit">SUBMIT FORM</button>
+                    </div>
+                </form>
             </div>
+
+
+                </div> <!-- row -->
+            </div> <!-- conatiner dash board -->
             
-        
-        
      <!-----------FOOTER HERE- ------------>
         <footer class="footer">
             <div class="container">

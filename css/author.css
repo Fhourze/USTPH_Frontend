@@ -1,3 +1,4 @@
+/* Define the font-face for Goudy Old Style */
 @font-face {
     font-family: 'Goudy Old Style';
     src: url('/fonts/Goudy.ttf') format('truetype');
@@ -6,16 +7,17 @@
 }
 
 /* Global Font Application */
-body, h1, h2, h3, h4, h5, h6, p, li, a, button, table {
+body, h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea, table, th, td, label {
     font-family: 'Goudy Old Style', serif;
 }
 
-/* Dashboard Sidebar */
+/* Specific Styles */
 .sidebar {
     padding: 20px;
     background-color: #f8f9fa;
     border-radius: 10px;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .sidebar h4 {
@@ -73,6 +75,7 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, button, table {
 .submission-guidelines-content h2 {
     font-weight: bold;
     margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .submission-guidelines-content ul {
@@ -85,10 +88,181 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, button, table {
     font-size: 16px;
 }
 
-.submission-guidelines-content .btn-warning {
+.submission-guidelines-content {
     background-color: #fcb900;
     font-weight: lighter;
     color: black;
     border-radius: 30px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px; /* Increased margin to provide space above the footer */
+    font-size: 16px;
+}
+
+
+/* Submission Form Styles */
+.form-group-R label,
+.form-group,
+.placeholder,
+.submission-guidelines-content label {
+    font-weight: lighter;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Goudy Old Style';
+}
+
+.welcome-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.welcome-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.dashboard-container {
+    margin-top: 20px;
+}
+
+.dashboard-container .form-control {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.form-group-R button {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 50%;
+    font-weight: 500;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #d9d9d9;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn a,
+.btn-submit,
+.btn-fill{
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: lighter;
+    border-radius: 20px;
+    border: none;
+    background-color: #fcb900;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-decoration: none; /* Removes underline from the link */
+    display: inline-block; /* Ensures padding and border-radius are applied */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.form-group-R button:hover {
+    background-color: #ffc107;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.proceed-btn {
+    font-size: 18px;
+    padding: 1px 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: #fcb900;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.proceed-btn:hover {
+    background-color: #ffc107;
+}
+
+/* Responsive */
+@media (max-width: 475px) {
+    body {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .sidebar {
+        padding: 15px;
+    }
+
+    .dashboard-container .form-control {
+        font-size: 14px;
+    }
+
+    .btn a {
+        padding: 8px 20px;
+    }
+
+    .form-group-R button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .welcome-title {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        padding: 30px;
+    }
+
+    .dashboard-content, .submission-guidelines-content {
+        margin-top: 30px;
+    }
+
+    .dashboard-container .form-control {
+        font-size: 18px;
+    }
+
+    .btn a {
+        padding: 12px 25px;
+    }
+
+    .form-group-R button {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .sidebar {
+        padding: 40px;
+    }
+
+    .dashboard-content, .submission-guidelines-content {
+        margin-top: 40px;
+    }
+
+    .dashboard-container .form-control {
+        font-size: 20px;
+    }
+
+    .btn a {
+        padding: 15px 30px;
+    }
+
+    .form-group-R button {
+        width: 30%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .sidebar {
+        padding: 50px;
+    }
 }
