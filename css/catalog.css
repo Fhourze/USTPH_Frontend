@@ -52,7 +52,23 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: scale(1.06);
+}
+
+.card > a {
+    text-decoration: none; /* Remove underline from anchor tags */
+}
+
+.card > a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.card-body a {
+    color: black; /* Set text color to black */
+}
+
+.card-body a h5, .card-body a p {
+    color: black; /* Set text color to black for h5 and p elements inside the anchor tag */
 }
 
 /* Custom styles for pagination */
