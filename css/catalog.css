@@ -1,9 +1,14 @@
+/* GOUDY OLD STYLE */
 @font-face {
     font-family: 'Goudy Old Style';
     src: url('/fonts/Goudy.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+  }
+
+  /* ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 body {
     font-family: 'Goudy Old Style', serif;
@@ -186,6 +191,41 @@ body {
     background-color: #e0a800; 
     color: black;
 }
+
+
+/* CARD TEXTS */
+
+.card-text {
+    font-size:12px;
+}
+
+/* SORT AND SEARCH AND PAGINATION BUTTONS */
+
+.form-control {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size:10px;
+}
+
+.page-item {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 12px;
+}
+
+.cat-view {
+    margin-bottom: 3%;
+}
+
+/* MY ACCOUNT BUTTON */
+
+#navbarDropdown {
+    color:black;
+  }
+  
+  .dropdown-item {
+    font-family: "Goudy Old Style", serif;
+  }
+
+
 
 /* Responsive Add-Book Button and Sidebar */
 /* For tablets and larger mobile screens (max-width: 768px) */

@@ -1,7 +1,14 @@
-/* Footer */
-*{
-    font-family: 'Roboto Condensed', sans-serif;
-}
+/* GOUDY OLD STYLE */
+@font-face {
+    font-family: 'Goudy Old Style';
+    src: url('/fonts/Goudy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 .footer {
     background: linear-gradient(to bottom, #FFDE59, #FCB900); /* Match the gradient color */
     padding: 20px 0;

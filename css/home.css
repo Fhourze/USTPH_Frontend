@@ -1,3 +1,4 @@
+/* GOUDY OLD STYLE */
 @font-face {
   font-family: 'Goudy Old Style';
   src: url('/fonts/Goudy.ttf') format('truetype');
@@ -5,12 +6,9 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+/* ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /* Carousel container with specific width and height */
 #carousel-ust {
@@ -53,10 +51,6 @@
   
 /* Texts */
 
-p {
-  font-family: 'Archivo Condensed', sans-serif;
-}
-
 h3 {
   font-family: 'Goudy Old Style', serif;
   text-transform: uppercase; 
@@ -75,6 +69,7 @@ h3 {
 .book-card img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .book-card p {
@@ -96,12 +91,14 @@ h3 {
   font-family: 'Goudy Old Style', serif;
   background: linear-gradient(to bottom, #FFDE59, #FCB900);
   border:none;
+  padding: 0 auto;
+  transition: 0.5s;
+
 }
 
 #btn-view-cat:hover {
-    background: linear-gradient(to bottom, #383838, #121212);
     transition: 0.5s;
-    color:#FFDE59;
+    color:#725b00;
 }
 
 /* Browse by Category */
@@ -114,9 +111,36 @@ h3 {
     margin: 10px;
     color: #000;
     border-color: #ffc107;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 .categories .btn:hover {
     background-color: #ffc107;
     color: #fff;
+}
+
+.cat-view {
+  margin-bottom: 5%;
+}
+
+
+/* MY ACCOUNT BUTTON */
+
+#navbarDropdown {
+  color:black;
+}
+
+.dropdown-item {
+  font-family: "Goudy Old Style", serif;
+}
+
+/* BOOK TITLE */
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h5 {
+  color:#FCB900;
+  font-weight: bolder;
 }

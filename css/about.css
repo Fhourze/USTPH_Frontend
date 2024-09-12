@@ -101,6 +101,16 @@
     text-transform: uppercase;
   }
   
+/* MY ACCOUNT BUTTON */
+
+#navbarDropdown {
+  color:black;
+}
+
+.dropdown-item {
+  font-family: "Goudy Old Style", serif;
+}
+
   /* Responsive design */
   @media (max-width: 768px) {
     .team-member {

@@ -1,10 +1,14 @@
-/* Define the font-face for Goudy Old Style */
+/* GOUDY OLD STYLE */
 @font-face {
     font-family: 'Goudy Old Style';
     src: url('/fonts/Goudy.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+  }
+
+  /* ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /* Global Font Application */
 body, h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea, table, th, td, label {
@@ -14,15 +18,15 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea, table, th, td, 
 /* Specific Styles */
 .sidebar {
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #ebecf0;
     border-radius: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .sidebar h4 {
-    font-weight: bold;
-    margin-bottom: 15px;
+    text-transform: uppercase;
+    padding-left:10px;
 }
 
 .sidebar .nav-link {
@@ -31,8 +35,8 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea, table, th, td, 
 }
 
 .sidebar .nav-link:hover, .sidebar .nav-link.active {
-    background-color: #ffd100;
-    color: white;
+    background-color: #cecece;
+    color: black;
     border-radius: 5px;
 }
 
@@ -110,18 +114,6 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea, table, th, td, 
     font-family: 'Goudy Old Style';
 }
 
-.welcome-section {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-.welcome-title {
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 10px;
-}
 
 .dashboard-container {
     margin-top: 20px;
@@ -130,7 +122,6 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea, table, th, td, 
 .dashboard-container .form-control {
     padding: 10px;
     border-radius: 20px;
-    border: 1px solid #ccc;
     font-size: 16px;
 }
 
@@ -151,18 +142,24 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea, table, th, td, 
 .btn a,
 .btn-submit,
 .btn-fill{
+    color:black;
     padding: 10px 30px;
     font-size: 16px;
     font-weight: lighter;
     border-radius: 20px;
     border: none;
     background-color: #fcb900;
-    color: black;
     cursor: pointer;
     margin-bottom: 10px;
-    text-decoration: none; /* Removes underline from the link */
+    text-decoration: none !important; /* Removes underline from the link */
     display: inline-block; /* Ensures padding and border-radius are applied */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    transition: 0.5s; /* Smooth transition */
+}
+
+.btn-fill:hover {
+    color: black;
+    transition: 0.5s;
+    background-color: #ffcb3b;
 }
 
 .form-group-R button:hover {
@@ -187,6 +184,12 @@ body, h1, h2, h3, h4, h5, h6, p, li, a, button, input, textarea, table, th, td, 
 
 .proceed-btn:hover {
     background-color: #ffc107;
+}
+
+/* SPACE AT THE BOTTOM */
+
+.submit-view {
+    margin-bottom: 5%;
 }
 
 /* Responsive */
