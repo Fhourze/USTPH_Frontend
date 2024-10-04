@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/catalog.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <!-- THIN YELLOW BORDER TOP -->
+        <div class="top-border"></div>
+        <!-- LOGO | SIGNUP | LOGIN -->
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <a class="navbar-ustph" href="Homepage.html">
+                    <img src="images/USTPH.png" class="navbar-logo" alt="USTPH Logo">
+                    <div class="navbar-text">
+                        <span class="brand-title">UNIVERSITY OF SANTO TOMAS</span>
+                        <span class="brand-subtitle">PUBLISHING HOUSE</span>
+                    </div>
+                </a>
+
+                <div class=" navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                MY ACCOUNT
+                            </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="UserAccount.html">My ACCOUNT</a>
+                                    <a class="dropdown-item" href="Signuppage.html">SIGN-OUT</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+    
+    <!-------NAVBAR--------->
+
+    <nav class="navbar navbar-expand-lg navbar-dark sub-navbar-custom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Homepage.html">HOME</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="UserCatalog.html">CATALOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">ABOUT USTPH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="SubmissionGuideL.html">SUBMISSION</a>
+                </li>
+            </ul>
+        </div>
+    </nav>        
+
+    <!------------ WELCOME SECTION ---------->
+    <div class="welcome-section">
+        <h1 class="welcome-title">WELCOME TO THE CATALOG</h1>
+    </div>
+
+    <!-- Book Catalog -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Repeatable book items -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="UserBook17.html"> <!----link sya sa bookview pag na click yung image-->
+                        <img src="images/BookCoverPhotos/Book17.jpg" class="card-img-top" alt="Book 1" style="height: 350px; object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="UserBook17.html" style="text-decoration: none"> <!----link sya sa bookview pag na click yung Title-->
+                            <h6 class="card-title">Mariposa Gang and Other Stories </h6>
+                            <p class="card-text">Katherine Torres</p>
+                            <h5 class="price text-warning">₱ 113</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="UserBook18.html">
+                        <img src="images/BookCoverPhotos/Book18.jpg" class="card-img-top" alt="Book 1" style="height: 350px; object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="UserBook18.html" style="text-decoration: none">
+                            <h6 class="card-title">From Manila To The World: 10 Stories, 10 Cities, and One Accidental Globe-Trotter</h6>
+                            <p class="card-text">Paolo Mangahas</p>
+                            <h5 class="price text-warning">₱ 226</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>                       
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="UserBook">
+                    <img src="images/BookCoverPhotos/Book19.jpeg" class="card-img-top" alt="Book" style="height: 350px; object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="UserBook.html" style="text-decoration: none">
+                            <h6 class="card-title">Home Of the Ashfall:A Memoir</h6>
+                            <p class="card-text">John Jack G. Wigley</p>
+                            <h5 class="price text-warning">₱ 520</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="UserBook.html">
+                    <img src="images/BookCoverPhotos/Book20.jpeg" class="card-img-top" alt="Book" style="height: 350px; object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="UserBook.html" style="text-decoration: none">
+                            <h6 class="card-title">Looking For Polaris: A Memoir of Losing and Finding</h6>
+                            <p class="card-text">Dawn lauren</p>
+                            <h5 class="price text-warning">₱ 300</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="UserBook">
+                    <img src="images/BookCoverPhotos/Book21.jpg" class="card-img-top" alt="Book" style="height: 350px; object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="UserBook.html" style="text-decoration: none">
+                            <h6 class="card-title">Windmills: Bearings</h6>
+                            <p class="card-text">Josel Nicolas</p>
+                            <h5 class="price text-warning">₱ 550</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="UserBook">
+                    <img src="images/BookCoverPhotos/Book22.jpg" class="card-img-top" alt="Book" style="height: 350px; object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="UserBook.html" style="text-decoration: none">
+                            <h6 class="card-title">Under Manila Sky: A Memoir on the art of Survival </h6>
+                            <p class="card-text">Irene W. D. Hecth</p>
+                            <h5 class="price text-warning">₱ 310</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>                       
+            
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="UserBook">
+                    <img src="images/BookCoverPhotos/Book23.jpg" class="card-img-top" alt="Book" style="height: 350px; object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="UserBook.html" style="text-decoration: none">
+                            <h6 class="card-title">Writing Naked: A Memoir</h6>
+                            <p class="card-text">Arnie Quibranza Mejia</p>
+                            <h5 class="price text-warning">₱ 300</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100">
+                    <a href="UserBook">
+                    <img src="images/BookCoverPhotos/Book24.jpg" class="card-img-top" alt="Book" style="height: 350px; object-fit: cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="UserBook.html" style="text-decoration: none">
+                            <h6 class="card-title">Everything is Realism</h6>
+                            <p class="card-text">Arnie Quibranza Mejia</p>
+                            <h5 class="price text-warning">₱ 300</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+    
+    <!----------Next&PREV------------>
+    <div class="cat-view">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+
+                <li class="page-item">
+                    <a class="page-link" href="UserCatalog2.html" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="UserCatalog.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="UserCatalog2.html">2</a></li>
+                <li class="page-item active"><a class="page-link" href="UserCatalog3.html">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="UserCatalog4.html">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-----------FOOTER------------>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: Logo -->
+                <div class="col-md-3 mb-3 d-flex justify-content-center">
+                    <a href="Homepage.html" class="navbar-brand">
+                        <img src="images/USTLOGO.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
+                    </a>
+                </div>
+                <!-- Column 2: Address -->
+                <div class="col-md-3 mb-3">
+                    <p><i class="fas fa-map-marker-alt"></i> G/F Beato Angelico Building <br>
+                        University of Santo Tomas, <br>
+                        España Boulevard, Sampaloc, <br>
+                        Manila 1008, Philippines</p>
+                </div>
+                <!-- Column 3: Phone Numbers -->
+                <div class="col-md-3 mb-3">
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-phone"></i> (098) 765-4321</p>
+                </div>
+                <!-- Column 4: Social Media -->
+                <div class="col-md-3 mb-3">
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f" style="color:black"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-twitter" style="color:black"></i></a>
+                    <a href="mailto:info@example.com" class="text-white"><i class="fas fa-envelope" style="color:black"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <p>&copy; Copyright 2024. University of Santo Tomas. All Rights Reserved. | Powered by Communications Bureau</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+</body>
+</html>

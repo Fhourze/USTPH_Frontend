@@ -64,6 +64,12 @@
   margin-bottom: 20px;
 }
 
+.book-description, .author-description {
+  text-align: justify;
+  line-height: 1.6; /* Optional: Adjust line-height for better readability */
+}
+
+
 .book-details {
   font-size: 14px;
   color: #555;
