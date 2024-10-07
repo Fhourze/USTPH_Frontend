@@ -6,13 +6,41 @@
     font-style: normal;
   }
 
-  /* ROBOTO */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-body {
-    font-family: 'Goudy Old Style', serif;
+.card-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    font-weight:500;
+    font-size: 1.2rem;
 }
+
+.card-author {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size:12px;
+    color: #737373;
+}
+
+.card-genre {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #FCB900;
+    font-weight: bold;
+}
+
+.card-price {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #FCB900;
+    font-weight: bolder;
+}
+
+.card-info {
+    line-height: 1; /* Adjust this value as needed */
+}
+
 
 /* Category Sidebar */
 .category-sidebar {
@@ -66,14 +94,6 @@ body {
 
 .card > a:hover {
     text-decoration: none; /* Remove underline on hover */
-}
-
-.card-body a {
-    color: black; /* Set text color to black */
-}
-
-.card-body a h5, .card-body a p {
-    color: black; /* Set text color to black for h5 and p elements inside the anchor tag */
 }
 
 /* Custom styles for pagination */
@@ -194,10 +214,6 @@ body {
 
 
 /* CARD TEXTS */
-
-.card-text {
-    font-size:12px;
-}
 
 /* SORT AND SEARCH AND PAGINATION BUTTONS */
 
