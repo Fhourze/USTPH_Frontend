@@ -1,0 +1,63 @@
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center;
+    margin-top:30px;
+}
+  
+.generate-btn {
+    width: 20%;
+    background: linear-gradient(to bottom, #FFDE59, #FCB900);
+    border: none;
+    font-family: 'Goudy Old Style';
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.token-display {
+    margin-top: 15px; /* Space between button and token display */
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+  }
+  
+/* TABLE */
+  .table-container {
+    width: 100%;
+    max-width: 80%;
+    margin: 20px auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    min-height: 300px; /* Minimum height */
+    max-height: 700px; /* Maximum height */
+    overflow-y: auto; 
+  }
+  
+  .generated-codes-table {
+    width:100%;
+    table-layout: fixed; /* Ensures equal-width columns */
+
+  }
+  
+  .generated-codes-table th {
+    background: linear-gradient(to bottom, #FFDE59, #FCB900); /* Adds a gradient */
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Centers text horizontally */
+    vertical-align: middle; /* Centers text vertically */
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .generated-codes-table td, .generated-codes-table th {
+    border-bottom: 1px solid #f2f2f2;
+    text-align: center;
+    padding:10px;
+  }
+  
